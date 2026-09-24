@@ -103,15 +103,3 @@ def ingest_data(hours: int = 24) -> list[dict]:
 
     # Return the complete dataset to the caller
     return data
-
-
-if __name__ == "__main__":
-    # Run the ingestion directly when this file is executed
-    data: list[dict] = ingest_data(hours=24)
-
-    # Report the total number of records received
-    print(f"Successfully ingested {len(data)} records.")
-
-    # Print the first five records for inspection
-    for record in data[:5]:
-        print(record)

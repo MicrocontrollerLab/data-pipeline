@@ -1,6 +1,11 @@
 name: Data Pipeline
 
 on:
+  # Run automatically once every hour
+  schedule:
+    - cron: "0 * * * *"
+
+  # Allow the pipeline to be started manually
   workflow_dispatch:
 
 jobs:

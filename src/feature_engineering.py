@@ -39,7 +39,8 @@ def engineer_features(data: dict) -> dict:
 
     print(
         "Feature engineering successful: "
-        f"{len(features)} values available."
+    f"{len(features)} values available. "
+    # f"Example feature: {list(features.keys())[:-1]}..."
     )
 
     return features

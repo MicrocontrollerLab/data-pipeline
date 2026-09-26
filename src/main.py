@@ -3,6 +3,7 @@ from validation import validate_data
 from normalization import normalize_data
 from aggregation import aggregate_data
 from feature_engineering import engineer_features
+from storage import store_features
 
 
 def main():
@@ -20,6 +21,10 @@ def main():
 
     # Step 5: Create derived features for further analysis
     features = engineer_features(aggregated_data)
+
+
+    # Step 6: Store the final snapshot in Supabase
+    store_features(features)
 
     # Return the final feature data
     return features

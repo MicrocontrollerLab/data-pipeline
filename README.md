@@ -1,3 +1,5 @@
+[![Data Pipeline](https://github.com/MicrocontrollerLab/data-pipeline/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/MicrocontrollerLab/data-pipeline/actions/workflows/pipeline.yml)
+
 # 🧪 Data Pipeline
 
 Data processing pipeline for the **MicrocontrollerLab** project.
@@ -34,13 +36,13 @@ Raw sensor data is currently stored in **Supabase PostgreSQL**.
 
 Current sensor measurements include:
 
-* 🌡️ DHT11 temperature
-* 💧 DHT11 humidity
-* 🌡️ DHT20 temperature
-* 💧 DHT20 humidity
-* 🧪 Gas sensor raw value
-* 💡 Light sensor raw value
-* 🕒 Timestamp
+- 🌡️ DHT11 temperature
+- 💧 DHT11 humidity
+- 🌡️ DHT20 temperature
+- 💧 DHT20 humidity
+- 🧪 Gas sensor raw value
+- 💡 Light sensor raw value
+- 🕒 Timestamp
 
 The raw data remains unchanged and serves as the source for subsequent processing and analysis.
 
@@ -66,26 +68,26 @@ Reduces the 24-hour dataset to a single statistical snapshot.
 
 For each sensor value, the pipeline calculates:
 
-* 📈 Average
-* 📊 Median
-* ⬇️ Minimum
-* ⬆️ Maximum
+- 📈 Average
+- 📊 Median
+- ⬇️ Minimum
+- ⬆️ Maximum
 
 The snapshot also contains metadata such as:
 
-* 🕒 Snapshot timestamp
-* ⏱️ Aggregation window
-* 🔢 Number of source records
+- 🕒 Snapshot timestamp
+- ⏱️ Aggregation window
+- 🔢 Number of source records
 
 ### 🧬 Feature Engineering
 
 Creates derived values from the aggregated sensor data, such as:
 
-* 🌡️ Sensor temperature difference
-* 📏 Temperature range
-* 💧 Humidity range
-* 🧪 Gas range
-* 💡 Light range
+- 🌡️ Sensor temperature difference
+- 📏 Temperature range
+- 💧 Humidity range
+- 🧪 Gas range
+- 💡 Light range
 
 ## 💾 Output
 
@@ -112,8 +114,8 @@ The complete pipeline can be executed through **GitHub Actions**.
 
 The workflow currently supports:
 
-* ⏱️ Automatic hourly execution
-* ▶️ Manual execution for development and testing
+- ⏱️ Automatic hourly execution
+- ▶️ Manual execution for development and testing
 
 The workflow retrieves the required Supabase credentials from GitHub Actions secrets.
 

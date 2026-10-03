@@ -29,4 +29,5 @@ def validate_data(data: list[dict]) -> list[dict]:
 
     # Validation ONLY checks the data. No new List[dict]!
     # Return the original dataset after successful validation.
+    print("Validation: Data validation completed successfully.")
     return data
